@@ -62,11 +62,11 @@ const styles = StyleSheet.create({
         flex: 1,
         marginBottom: 24,
         borderBottomWidth: 0.5,
-        borderBottomColor: "#DADADA"
+        borderBottomColor: "#5DADE2"
     },
 
     date:{
-        color: '#DADADA',
+        color: '#5DADE2',
         fontWeight: 'bold'
     },
 
@@ -86,14 +86,14 @@ const styles = StyleSheet.create({
 
     value:{
         fontSize: 16 ,
-        color: '#2ecc71',
+        color: '#27AE60',
         fontWeight: 'bold',
 
     },
 
     expenses: {
         fontSize: 16 ,
-        color: '#e74c3c',
+        color: '#C0392B',
         fontWeight: 'bold',
     },
 
@@ -101,7 +101,7 @@ const styles = StyleSheet.create({
         marginTop: 6 ,
         width: 80 ,
         height: 10 ,
-        backgroundColor: '#DADADA',
+        backgroundColor: '#5DADE2',
         borderRadius: 8 ,
         
     }

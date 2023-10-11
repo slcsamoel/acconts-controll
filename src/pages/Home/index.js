@@ -29,7 +29,7 @@ const list = [
     },
 ]    
 
-export default function Home() {
+export default function Home({navigation}) {
   return (
     <View style={styles.container}>
       <Header  name="Samoel Costa"/> 
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
   
   container: {
     flex: 1,
-    backgroundColor: '#fafafa',
+    backgroundColor: '#EBF5FB',
   },
   
   title:{

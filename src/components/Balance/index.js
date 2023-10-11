@@ -52,7 +52,7 @@ export default function Balance({saldo , gastos}){
 const styles = StyleSheet.create({
 
     container:{ 
-        backgroundColor: '#FFF',
+        backgroundColor: '#fff',
         flexDirection: 'row',
         justifyContent: 'space-between',
         paddingStart: 18 ,
@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
     },
     itemTitle:{
         fontSize: 20 ,
-        color: '#DADADA',
+        color: '#5DADE2',
 
     },
 
@@ -81,18 +81,20 @@ const styles = StyleSheet.create({
     },
 
     currentSymbol:{
-        color: '#DADADA',
+        color: '#5DADE2',
         marginRight:6 , 
     },
 
     balance:{
         fontSize: 22 ,
-        color: '#2ecc71'
+        color: '#27AE60',
+        fontWeight: 'bold',
     },
 
     expenses: {
         fontSize: 22 ,
-        color: '#e74c3c'
+        color: '#C0392B',
+        fontWeight: 'bold',
     }
 
 

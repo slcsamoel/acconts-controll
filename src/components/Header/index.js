@@ -43,9 +43,6 @@ export default function Header({name}){
                     {name}
                 </MotiText>
 
-                <TouchableOpacity activeOpacity={0.9} style={styles.buttonUser} >
-                    <Feather name="user" size={27} color="#FFF"/>
-                </TouchableOpacity>
 
             </MotiView>
         </View>
@@ -56,7 +53,7 @@ export default function Header({name}){
 const styles = StyleSheet.create({
 
     container: {
-        backgroundColor: '#8000ff',
+        backgroundColor: '#5DADE2',
         paddingTop: statusBarHeight,
         flexDirection: 'row',
         paddingStart: 16,
@@ -67,13 +64,19 @@ const styles = StyleSheet.create({
         flex: 1 ,
         alignItems: 'center',
         flexDirection: 'row',
-        justifyContent: 'space-between',
+        justifyContent: 'center',
+        textAlign: 'center',
+        alignItems:'center',
 
     },
     userName:{
-        fontSize:18,
+        fontSize:22,
         color: '#FFF',
         fontWeight: 'bold',
+        margin: 'auto',
+        justifyContent: 'center',
+        textAlign: 'center',
+        alignItems:'center',
     },
     buttonUser:{
           width: 44,
@@ -82,7 +85,6 @@ const styles = StyleSheet.create({
           justifyContent: 'center',
           alignItems: 'center',
           borderRadius: 44,
-
     }
 
 })

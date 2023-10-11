@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
     },
 
     areaButton:{
-        backgroundColor: '#ecf0f1',
+        backgroundColor: '#fff',
         height: 60 ,
         width: 60,
         borderRadius: 30 ,
@@ -78,6 +78,7 @@ const styles = StyleSheet.create({
     },
     
     labelButton:{
+        color: '#5DADE2',
         marginTop: 4 ,
         textAlign: 'center',
         fontWeight: 'bold',
