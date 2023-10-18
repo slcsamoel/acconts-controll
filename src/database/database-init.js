@@ -1,4 +1,4 @@
-import { DatabaseConnection } from './database-connection'
+import  DatabaseConnection  from './database-connection'
 
 var db = null
 
@@ -8,7 +8,7 @@ export default class DatabaseInit {
         db = DatabaseConnection.getConnection()
         db.exec([{ sql: 'PRAGMA foreign_keys = ON;', args: [] }], false, () =>
         console.log('Foreign keys turned on')
-    );
+        );
         this.InitDb()
     }
      InitDb() {
@@ -25,17 +25,19 @@ export default class DatabaseInit {
 
             `create table if not exists movement_type (
              id integer primary key autoincrement,
-             descricao text,
+             descricao text
             );`,
 
             `create table if not exists movements (
             id integer primary key autoincrement,
             descricao text,
             valor  int,
-            movement_type int,
+            movement_type_id int,
             type int,
-            foreign key (movement_type) references movement_type (id),
             data datetime,
+
+            foreign key (movement_type_id) references movement_type (id)    
+
             );`,
             
             `insert into movement_type(descricao) values('Boleto');`,
